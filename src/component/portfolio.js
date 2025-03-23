@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Parallax } from "react-parallax";
 import {
   AppBar,
   Toolbar,
@@ -17,7 +16,7 @@ class Portfolio extends Component {
   firstUi = () => {
     return (
       <Box>
-        <Parallax strength={500}>
+        <Box strength={500}>
           <Box style={{ position: "relative", height: "100vh" }}>
             <img
               src={img}
@@ -54,7 +53,7 @@ class Portfolio extends Component {
               </Typography>
             </Box>
           </Box>
-        </Parallax>
+        </Box>
 
         <Container style={{ marginTop: 100 }}>
           <Typography variant="h4" gutterBottom align="center">
@@ -74,7 +73,7 @@ class Portfolio extends Component {
           </Grid>
         </Container>
 
-        <Parallax strength={400}>
+        <Box strength={400}>
           <Box style={{ position: "relative", height: "100vh" }}>
             <img
               src={img2}
@@ -108,7 +107,7 @@ class Portfolio extends Component {
               </Typography>
             </Box>
           </Box>
-        </Parallax>
+        </Box>
 
         <Container style={{ marginTop: 100, marginBottom: 50 }}>
           <Typography variant="h4" gutterBottom align="center">
