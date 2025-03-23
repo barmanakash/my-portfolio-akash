@@ -1,5 +1,5 @@
 import "./App.css";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Portfolio from "./component/portfolio";
 
 function App() {

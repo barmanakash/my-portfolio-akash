@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import {
-  AppBar,
-  Toolbar,
   Typography,
   Container,
   Card,
