@@ -93,21 +93,63 @@ class Portfolio extends Component {
         >
           <Box
             style={{ backgroundColor: "red", height: "300px", width: "400px" }}
-          ></Box>
+          >
+            <ul>
+              <Typography style={{ fontWeight: "700", fontSize: "25px" }}>
+                Projects
+              </Typography>
+              <li>Zoom Notary</li>
+              <li>Funds Man</li>
+              <li>Etho Suit</li>
+              <li>Tour Guid</li>
+              <li>Service Internal</li>
+            </ul>
+          </Box>
           <Box
             style={{
               backgroundColor: "green",
               height: "300px",
               width: "400px",
             }}
-          ></Box>
+          >
+            <ul>
+              <Typography style={{ fontWeight: "700", fontSize: "25px" }}>
+                Skills
+              </Typography>
+              <li>ReactJs</li>
+              <li>NextJs</li>
+              <li>Node</li>
+              <li>JavaScript</li>
+              <li>Redux</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Material UI</li>
+              <li>Git/GitLab</li>
+              <li>SonarQube</li>
+            </ul>
+          </Box>
           <Box
             style={{
               backgroundColor: "yellow",
               height: "300px",
               width: "400px",
             }}
-          ></Box>
+          >
+            <ul>
+              <Typography style={{ fontWeight: "700", fontSize: "25px" }}>
+                Educational Details
+              </Typography>
+              <li>Btech(2017 - 2021)</li>
+              <li>Stream - Information Technology</li>
+            </ul>
+            <ul>
+              <li>12th(2015 -2016)</li>
+              <li>Subject - Maths</li>
+            </ul>
+            <ul>
+              <li>10th(2014)</li>
+            </ul>
+          </Box>
         </Box>
       </StyleBox>
     );
