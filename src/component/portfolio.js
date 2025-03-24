@@ -11,6 +11,7 @@ import {
 import img from "../assests/awesom.jpg";
 import img2 from "../assests/dark.jpg";
 import akash from "../assests/Akash.jpeg";
+import { textValues } from "../text";
 
 class Portfolio extends Component {
   firstUi = () => {
@@ -68,7 +69,7 @@ class Portfolio extends Component {
                   marginBottom: "20%",
                 }}
               >
-                Welcome to My Portfolio - Akash Barman
+                {textValues.header}
               </Typography>
             </Box>
           </Box>
@@ -76,7 +77,7 @@ class Portfolio extends Component {
 
         <Container sx={{ marginTop: 10, maxWidth: "100%" }}>
           <Typography variant="h4" gutterBottom align="center">
-            About Me - work in progress
+            {textValues.about}
           </Typography>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={8} md={6}>
@@ -86,21 +87,13 @@ class Portfolio extends Component {
                     style={{
                       display: "flex",
                       justifyContent: "start",
+                      fontFamily: "sans-serif",
+                      fontSize: "18px",
                     }}
                     variant="body1"
                     align="center"
                   >
-                    I am a passionate developer with expertise in React and
-                    modern web technologies. I enjoy building efficient and
-                    scalable web applications, with a strong focus on frontend
-                    frameworks and state management. Staying updated with the
-                    latest industry trends is a priority for me, and I emphasize
-                    performance optimization and clean coding. With solid
-                    experience in APIs and backend integration, I believe in
-                    solving complex problems with creative solutions. Teamwork
-                    and collaboration are integral to my workflow, and I am
-                    always eager to learn new things and enhance my development
-                    skills.
+                    {textValues.aboutMeText}
                   </Typography>
                 </CardContent>
               </Box>
@@ -144,7 +137,7 @@ class Portfolio extends Component {
                 variant="h2"
                 style={{ fontSize: "clamp(2rem, 5vw, 3rem)" }}
               >
-                Projects - work in progress
+                {textValues.Projecttext}
               </Typography>
             </Box>
           </Box>
@@ -152,7 +145,7 @@ class Portfolio extends Component {
 
         <Container sx={{ marginTop: 10, marginBottom: 5, maxWidth: "100%" }}>
           <Typography variant="h4" gutterBottom align="center">
-            Contact - work in progress
+            {textValues.ContactText}
           </Typography>
           <Grid container spacing={3} justifyContent="center">
             <Grid item xs={12} sm={8} md={6}>
@@ -163,8 +156,7 @@ class Portfolio extends Component {
                     align="center"
                     style={{ width: "auto" }}
                   >
-                    Feel free to reach out to me at 1998akashbarman@gmail.com
-                    and +91 626108194
+                    {textValues.contactous}
                   </Typography>
                 </CardContent>
               </Card>
