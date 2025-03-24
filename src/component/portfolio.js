@@ -204,6 +204,7 @@ const StyleBox = styled(Box)({
     width: "100%",
     flexWrap: "wrap",
     marginTop: "30px",
+    marginBottom: "20px",
   },
   "& .commonbox": {
     display: "flex",
