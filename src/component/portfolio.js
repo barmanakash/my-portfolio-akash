@@ -1,15 +1,6 @@
 import React, { Component } from "react";
-import {
-  Typography,
-  Container,
-  Card,
-  CardContent,
-  Grid,
-  Box,
-  styled,
-} from "@mui/material";
+import { Typography, Box, styled } from "@mui/material";
 import img from "../assests/awesom.jpg";
-import img2 from "../assests/dark.jpg";
 import akash from "../assests/Akash.jpeg";
 import { textValues } from "../text";
 
@@ -74,95 +65,50 @@ class Portfolio extends Component {
             </Box>
           </Box>
         </Box>
-
-        <Container sx={{ marginTop: 10, maxWidth: "100%" }}>
-          <Typography variant="h4" gutterBottom align="center">
-            {textValues.about}
-          </Typography>
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={8} md={6}>
-              <Box className="animatedborder">
-                <CardContent>
-                  <Typography
-                    style={{
-                      display: "flex",
-                      justifyContent: "start",
-                      fontFamily: "sans-serif",
-                      fontSize: "18px",
-                    }}
-                    variant="body1"
-                    align="center"
-                  >
-                    {textValues.aboutMeText}
-                  </Typography>
-                </CardContent>
-              </Box>
-            </Grid>
-          </Grid>
-        </Container>
-
-        <Box strength={400}>
+        <Box style={{ marginTop: "5%" }}>
+          <Box>
+            <Typography variant="h4" align="center">
+              {textValues.about}
+            </Typography>
+          </Box>
           <Box
             style={{
-              position: "relative",
-              height: "100vh",
-              overflow: "hidden",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "4px",
             }}
           >
-            <img
-              src={img2}
-              alt="Background"
-              style={{
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
-            <Box
-              style={{
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "white",
-                background: "rgba(0, 0, 0, 0.5)",
-                textAlign: "center",
-                padding: "0 20px",
-              }}
-            >
-              <Typography
-                variant="h2"
-                style={{ fontSize: "clamp(2rem, 5vw, 3rem)" }}
-              >
-                {textValues.Projecttext}
-              </Typography>
-            </Box>
+            <Typography> {textValues.aboutMeText}</Typography>
           </Box>
         </Box>
-
-        <Container sx={{ marginTop: 10, marginBottom: 5, maxWidth: "100%" }}>
-          <Typography variant="h4" gutterBottom align="center">
-            {textValues.ContactText}
-          </Typography>
-          <Grid container spacing={3} justifyContent="center">
-            <Grid item xs={12} sm={8} md={6}>
-              <Card>
-                <CardContent>
-                  <Typography
-                    variant="body1"
-                    align="center"
-                    style={{ width: "auto" }}
-                  >
-                    {textValues.contactous}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          </Grid>
-        </Container>
+        <Box
+          style={{
+            display: "flex",
+            gap: "100px",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            marginTop: "5%",
+          }}
+        >
+          <Box
+            style={{ backgroundColor: "red", height: "300px", width: "400px" }}
+          ></Box>
+          <Box
+            style={{
+              backgroundColor: "green",
+              height: "300px",
+              width: "400px",
+            }}
+          ></Box>
+          <Box
+            style={{
+              backgroundColor: "yellow",
+              height: "300px",
+              width: "400px",
+            }}
+          ></Box>
+        </Box>
       </StyleBox>
     );
   };
