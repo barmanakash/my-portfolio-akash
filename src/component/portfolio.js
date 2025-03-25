@@ -31,6 +31,26 @@ class Portfolio extends Component {
           <Box className="aboutstyle">
             <Typography> {textValues.aboutMeText}</Typography>
           </Box>
+          <Box>
+            <Typography
+              variant="h4"
+              align="center"
+              style={{ marginTop: "20px" }}
+            >
+              {textValues.experience}
+            </Typography>
+          </Box>
+          <Box className="aboutstyleexp">
+            <Typography>
+              SVAM International inc. Noida (Present from August 2025)
+            </Typography>
+            <Typography>
+              DXC Technology Bangaluru karnataka (February 2022 - May 2023)
+            </Typography>
+            <Typography>
+              IGT Solutions Pune Maharashtra (December 2021 - January 2023)
+            </Typography>
+          </Box>
         </Box>
         <Box className="prbox">
           <Box className="chbox">
@@ -158,7 +178,6 @@ const StyleBox = styled(Box)({
     alignItems: "center",
     padding: "4px",
     fontFamil: "Arial, sans-serif",
-    border: "2px solid gray",
     textAlign: "center",
   },
   "& .prbox": {
@@ -210,5 +229,15 @@ const StyleBox = styled(Box)({
   },
   "& .commonbox": {
     display: "flex",
+  },
+  "& .aboutstyleexp": {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "4px",
+    fontFamil: "Arial, sans-serif",
+    textAlign: "center",
+    marginTop: "20px",
+    flexDirection: "column",
   },
 });

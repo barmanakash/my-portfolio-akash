@@ -8,4 +8,5 @@ export const textValues = {
   ContactText: "Contact",
   contactous:
     " Feel free to reach out to me at 1998akashbarman@gmail.com and +91 626108194",
+  experience: "Experience",
 };
