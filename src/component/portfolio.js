@@ -158,6 +158,8 @@ const StyleBox = styled(Box)({
     alignItems: "center",
     padding: "4px",
     fontFamil: "Arial, sans-serif",
+    border: "2px solid gray",
+    textAlign: "center",
   },
   "& .prbox": {
     display: "flex",
