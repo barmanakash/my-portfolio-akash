@@ -188,7 +188,7 @@ const StyleBox = styled(Box)({
     marginTop: "5%",
   },
   "& .chbox": {
-    backgroundColor: "#7a0080",
+    backgroundColor: "#55672D",
     height: "300px",
     width: "400px",
     borderRadius: "20px 100px",
@@ -198,7 +198,7 @@ const StyleBox = styled(Box)({
     fontSize: "25px",
   },
   "& .skillsbox": {
-    backgroundColor: "green",
+    backgroundColor: "#55672D",
     height: "300px",
     width: "400px",
     borderRadius: "20px 100px",
@@ -208,7 +208,7 @@ const StyleBox = styled(Box)({
     fontSize: "25px",
   },
   "& .edustyle": {
-    backgroundColor: "yellow",
+    backgroundColor: "#55672D",
     height: "300px",
     width: "400px",
     borderRadius: "20px 100px",
